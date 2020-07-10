@@ -11,7 +11,7 @@
  <p align="center"><img src="ss/ss1.jpg" alt="COVID19 Tracking Apps SS" width="850" height="500"></p>
  <p align="center">Screenshot</p>
  <hr>
-  <p align="center"><img src="ss/ss1.jpg" alt="COVID19 Tracking Apps SS" width="850" height="500"></p>
+  <p align="center"><img src="ss/ss2.jpg" alt="COVID19 Tracking Apps SS" width="850" height="500"></p>
  <p align="center">Screenshot</p>
  <hr>
  </span>
