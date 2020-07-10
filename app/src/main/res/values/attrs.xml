@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="white" format="color" />
+    <attr name="black" format="color" />
+    <attr name="grey" format="color" />
+    <attr name="green" format="color" />
+    <attr name="textBackground" format="color" />
+    <attr name="hint" format="color" />
+</resources>

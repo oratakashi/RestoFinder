@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/size_256"
+    android:layout_height="@dimen/size_150"
+    android:layout_marginStart="@dimen/margin_16"
+    app:cardCornerRadius="@dimen/radius_8"
+    app:cardElevation="@dimen/elevation_3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_150"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_no_images" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_150"
+            android:background="@drawable/bg_gradient_transparent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_10">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="@string/foo"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="@string/foo"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/font_12" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

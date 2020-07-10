@@ -1,0 +1,100 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.oratakashi.resto"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'BASE_URL', '"https://developers.zomato.com/api/v2.1/"'
+            buildConfigField 'String', 'QR_URL', '"https://trakteer.id/oratakashi/stream/qrcode?key=trstream-s89IbEqpQGyauyW5ckVC&qr_showlink=false"'
+            buildConfigField 'String', 'AUTHOR', '"Oratakashi Nhamako"'
+            buildConfigField 'String', 'JOB', '"Android Developer"'
+            buildConfigField 'String', 'CONTACT', '"oratakashi@oratakashi.com"'
+        }
+        debug {
+            resValue("string", "runMode", "development")
+            buildConfigField 'String', 'BASE_URL', '"https://developers.zomato.com/api/v2.1/"'
+            buildConfigField 'String', 'QR_URL', '"https://trakteer.id/oratakashi/stream/qrcode?key=trstream-s89IbEqpQGyauyW5ckVC&qr_showlink=false"'
+            buildConfigField 'String', 'AUTHOR', '"Oratakashi Nhamako"'
+            buildConfigField 'String', 'JOB', '"Android Developer"'
+            buildConfigField 'String', 'CONTACT', '"oratakashi@oratakashi.com"'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+kapt {
+    generateStubs = true
+}
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+
+    implementation 'com.karumi:dexter:6.0.2'
+    //Library Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+
+    //Library RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.10'
+    implementation 'com.jakewharton.rxbinding3:rxbinding:3.0.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+
+    //Library Image
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Library EditText
+    implementation 'com.ndroid:cool-view:1.0'
+
+    //Library Material Design
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+
+    //Dagger
+    implementation 'com.google.dagger:dagger:2.21'
+    implementation 'com.google.dagger:dagger-android:2.21'
+    implementation 'com.google.dagger:dagger-android-support:2.21'
+    kapt "com.google.dagger:dagger-compiler:2.21"
+    kapt "com.google.dagger:dagger-android-processor:2.21"
+
+    //Corotine
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0"
+
+    // Shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+}

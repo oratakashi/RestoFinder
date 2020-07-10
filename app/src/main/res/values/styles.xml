@@ -1,0 +1,107 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="BaseActionBar" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BaseNoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--  End Base  -->
+    <style name="AppTheme" parent="BaseActionBar">
+        <!-- Customize your theme here. -->
+        <item name="white">@color/white</item>
+        <item name="black">@color/black</item>
+        <item name="grey">@color/dark_grey</item>
+        <item name="green">@color/green_dark</item>
+        <item name="colorControlActivated">@color/green_dark</item>
+        <item name="hint">@color/hint</item>
+        <item name="textBackground">@color/light_grey</item>
+    </style>
+
+    <style name="AppThemeDark" parent="BaseActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="white">@color/black</item>
+        <item name="black">@color/white</item>
+        <item name="grey">@color/grey</item>
+        <item name="green">@color/green</item>
+        <item name="colorControlActivated">@color/green</item>
+        <item name="hint">@color/hint_dark</item>
+        <item name="textBackground">@color/dark_grey2</item>
+    </style>
+
+    <style name="AppThemeDark.NoActionBar" parent="BaseNoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="white">@color/black</item>
+        <item name="black">@color/white</item>
+        <item name="grey">@color/grey</item>
+        <item name="green">@color/green</item>
+        <item name="colorControlActivated">@color/green</item>
+        <item name="hint">@color/hint_dark</item>
+        <item name="textBackground">@color/dark_grey2</item>
+    </style>
+
+    <style name="AppThemeCustom" parent="BaseNoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="actionBarItemBackground">@color/white</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back_overide</item>
+        <item name="white">@color/white</item>
+        <item name="black">@color/black</item>
+        <item name="grey">@color/dark_grey</item>
+        <item name="green">@color/green_dark</item>
+        <item name="colorControlActivated">@color/green_dark</item>
+        <item name="hint">@color/hint</item>
+        <item name="textBackground">@color/light_grey</item>
+    </style>
+
+    <style name="AppThemeCustomDark" parent="BaseNoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back_overide</item>
+        <item name="white">@color/black</item>
+        <item name="black">@color/white</item>
+        <item name="grey">@color/grey</item>
+        <item name="green">@color/green</item>
+        <item name="colorControlActivated">@color/green_dark</item>
+        <item name="hint">@color/hint_dark</item>
+        <item name="textBackground">@color/dark_grey2</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="BaseNoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="white">@color/white</item>
+        <item name="black">@color/black</item>
+        <item name="grey">@color/dark_grey</item>
+        <item name="green">@color/green_dark</item>
+        <item name="colorControlActivated">@color/green_dark</item>
+        <item name="hint">@color/hint</item>
+        <item name="textBackground">@color/light_grey</item>
+    </style>
+
+    <style name="searchSmall" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">?attr/textBackground</item>
+        <item name="android:textColor">?attr/black</item>
+        <item name="android:textColorHint">?attr/hint</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/regular</item>
+        <item name="border_color">@color/dark_grey</item>
+        <item name="border_radius">10</item>
+        <item name="border_stroke">1</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

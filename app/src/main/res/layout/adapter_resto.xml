@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/size_182"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_5"
+    android:layout_marginTop="@dimen/margin_10"
+    android:layout_marginEnd="@dimen/margin_5"
+    android:layout_marginBottom="@dimen/margin_10"
+    app:cardCornerRadius="@dimen/radius_10"
+    app:cardElevation="@dimen/elevation_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_15">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_180"
+            android:contentDescription="@string/title_image_description"
+            android:scaleType="centerCrop"
+            android:src="@color/placeholder_bg" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:fontFamily="@font/bold"
+            android:text="@string/foo"
+            android:textColor="?attr/black"
+            android:textSize="@dimen/font_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/rbRatting"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:isIndicator="true"
+                android:max="5"
+                android:rating="0"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp" />
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_5"
+                android:fontFamily="@font/bold"
+                android:text="@string/title_zero"
+                android:textColor="?attr/black"
+                android:textSize="@dimen/font_12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:fontFamily="@font/regular"
+            android:text="@string/foo"
+            android:textSize="@dimen/font_10" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:fontFamily="@font/bold"
+            android:text="@string/foo"
+            android:textColor="@color/green_dark"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
