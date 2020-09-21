@@ -3,7 +3,7 @@ package com.oratakashi.resto.di.module
 import androidx.lifecycle.ViewModel
 import com.oratakashi.resto.data.network.ApiEndPoint
 import com.oratakashi.resto.ui.detail.DetailViewModel
-import com.oratakashi.silahturahmikita.di.scope.ViewModelKey
+import com.oratakashi.resto.di.scope.ViewModelKey
 import dagger.Binds
 import dagger.Module
 import dagger.Provides

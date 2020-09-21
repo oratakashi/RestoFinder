@@ -11,7 +11,7 @@ import com.oratakashi.resto.ui.detail.DetailActivity
 import com.oratakashi.resto.ui.main.MainActivity
 import com.oratakashi.resto.ui.search.SearchActivity
 import com.oratakashi.resto.ui.settings.SettingsActivity
-import com.oratakashi.silahturahmikita.di.scope.Presentation
+import com.oratakashi.resto.di.scope.Presentation
 import dagger.Binds
 import dagger.Module
 import dagger.android.ContributesAndroidInjector

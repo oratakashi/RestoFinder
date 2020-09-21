@@ -1,4 +1,4 @@
-package com.oratakashi.silahturahmikita.di.scope
+package com.oratakashi.resto.di.scope
 
 import androidx.lifecycle.ViewModel
 import dagger.MapKey
